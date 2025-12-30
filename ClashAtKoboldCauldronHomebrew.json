@@ -1,0 +1,616 @@
+{
+	"siteVersion": "1.213.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ClashatKoboldCauldron",
+				"abbreviation": "CaKC",
+				"full": "Clash at Kobold Cauldron",
+				"version": "1.0",
+				"authors": [
+					"Various"
+				],
+				"convertedBy": [
+					"Sleepycobbler"
+				],
+				"color": "ff0000",
+				"edition": "classic"
+			}
+		],
+		"dateAdded": 1767064695,
+		"dateLastModified": 1767064695,
+		"edition": "classic"
+	},
+	"monster": [
+		{
+			"name": "Booze Server Kobold",
+			"source": "ClashatKoboldCauldron",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "2d6 - 2",
+				"average": 5
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 9,
+			"int": 7,
+			"wis": 6,
+			"cha": 10,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The booze server kobold has advantage on an attack roll against a creature if at least one of the booze server kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the booze server kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Flammable Spirits",
+					"entries": [
+						"The kobold carries many bottles filled with highly-flammable alcohol. As a bonus action on each of its turns, the kobold can stuff a rag into the opening of an alcohol bottle it is carrying and ignite it using a nearby open flame, causing its next Hurl Bottle attack to use its ignited effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Broken Bottle",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Hurl Bottle",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage.",
+						"If the bottle was not ignited, the target is soaked in flammable alcohol. The next time a soaked target takes any fire damage, that fire damage is increased by 3 ({@dice 1d6}) as the alcohol burns away. If not ignited, the alcohol evaporates harmlessly after 1 minute.",
+						"If the bottle was ignited, hit or miss, it shatters in a fiery explosion. The target and each creature within 5 feet of it must make a {@dc 13} Dexterity saving throw. A creature takes 5 ({@damage 2d4}) fire damage and is ignited on a failed save, or takes half as much fire damage and is not ignited on a successful one. An ignited target takes 2 ({@damage 1d4}) fire damage at the start of each of its turns, and can end this damage by using its action to make a {@dc 10} Dexterity check to extinguish the flames. A flammable object in the area ignites if it isn't being worn or carried."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"The kobolds that run the Kobolds' Cauldron seemingly have absolutely zero awareness of the hazardous conditions under which they work day in and day out. Stills filled with explosive, high-proof liquor rest on the building's dry, splintered wood floors. These ramshackle vessels then steam and rattle next to uncovered torches and open chasms of flowing magma. ",
+					"The kobolds themselves are similarly cavalier with their combat tactics, rolling casks filled with unstable moonshine at attackers, and hurling flaming cocktails of booze with reckless abandon."
+				]
+			}
+		},
+		{
+			"name": "Cask Hauler Kobold",
+			"source": "ClashatKoboldCauldron",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 9,
+			"dex": 15,
+			"con": 10,
+			"int": 7,
+			"wis": 6,
+			"cha": 10,
+			"save": {
+				"str": "+1"
+			},
+			"skill": {
+				"athletics": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The cask hauler kobold has advantage on an attack roll against a creature if at least one of the cask hauler kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the cask hauler kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Volatile Cask",
+					"entries": [
+						"The kobold carries a cask of flammable alcohol on its back. While it does so, the kobold can't use its hands to make attacks or use actions, and fire damage the kobold takes is also taken by the cask. ",
+						"When the cask takes fire damage, roll a {@dice d10}. If the result is less than the fire damage dealt, the cask erupts in a 10-foot radius explosion. Each creature in the area must make a {@dc 13} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage on a failed save, or half as much on a successful one. Flammable objects in the area not being worn or carried ignite."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Roll Cask (1/Day)",
+					"entries": [
+						"The Kobold rolls its carried cask in a straight line 15 feet in a direction of its choice. The cask then continues to roll 15 feet at the start of each of the kobold's turns, accelerating, decelerating, or changing direction with the terrain at the GM's discretion. ",
+						"The cask is an object with an AC of 10 and 10 hit points (immunity to poison and psychic damage, vulnerability to fire damage), and which retains the applicable portion of the Volatile Cask trait above. If the cask collides with a creature or a solid surface, both it and what it collides with take 5 ({@damage 1d10}) bludgeoning damage for every 10 feet it moved this turn. ",
+						"If the cask is destroyed by fire damage, the Volatile Cask trait is triggered automatically. If it is destroyed by damage of a different type, it creates a 5-foot radius pool of flammable alcohol on the ground where it was destroyed. Any fire damage dealt in the pool's area ignites it, forcing each creature in the area to succeed on a {@dc 13} Dexterity saving throw or take 7 ({@damage 2d6}) fire damage as the alcohol burns up."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Dire Weasel",
+			"source": "ClashatKoboldCauldron",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 14,
+			"int": 4,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The dire weasel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 12})."
+					]
+				},
+				{
+					"name": "Violent Shake",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one Small or Tiny creature {@condition grappled} by the dire weasel. {@h}14 ({@damage 3d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Kobold Wing Sorcerer",
+			"source": "ClashatKoboldCauldron",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d6 + 8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 9,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"int": "+3",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"arcana": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The kobold is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell expeditious retreat}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell misty step}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kobold wing sorcerer has advantage on an attack roll against a creature if at least one of the kobold wing sorcerer's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kobold wing sorcerer has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Sorcery Points",
+					"entries": [
+						"The kobold has 5 sorcery points. It can spend 1 or more sorcery points as a bonus action to gain one of the following benefits: ",
+						"Heightened Spell: When it casts a spell that forces a creature to make a saving throw to resist the spell’s effects, the kobold can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw against the spell. ",
+						"Subtle Spell: When the kobold casts a spell, it can spend 1 sorcery point to cast the spell without any somatic or verbal components."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dropped Rock",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, one target directly beneath the kobold. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"F"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Molten Ooze",
+			"source": "ClashatKoboldCauldron",
+			"size": [
+				"L"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "11d10 + 55",
+				"average": 115
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 16,
+			"dex": 7,
+			"con": 20,
+			"int": 1,
+			"wis": 7,
+			"cha": 2,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The molten ooze can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Heated Body",
+					"entries": [
+						"A creature that touches the molten ooze or hits it with a melee attack while within 5 feet of it takes 5 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Molten Form",
+					"entries": [
+						"Nonmagical metal objects lost in the oozes body melt after 1 round. If the ooze takes 10 or more cold damage in one turn, its speed is reduced to 5 feet and it loses its Amorphous trait and nonmagical damage resistances until the end of its next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The molten ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one Large or smaller target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage plus 10 ({@damage 3d6}) fire damage, and if the target is a creature, it is {@condition grappled} (escape {@dc 14}). Until the grapple ends, the target is {@condition restrained}, the ooze can't constrict another target, and at the start of each of the ooze's turns, the target takes 21 ({@damage 6d6}) fire damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
