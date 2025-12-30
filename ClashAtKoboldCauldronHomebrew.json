@@ -17,8 +17,8 @@
 				"edition": "classic"
 			}
 		],
-		"dateAdded": 1767064695,
-		"dateLastModified": 1767064695,
+		"dateAdded": 1767065760,
+		"dateLastModified": 1767065760,
 		"edition": "classic"
 	},
 	"monster": [
@@ -105,6 +105,10 @@
 					]
 				}
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/BoozeServerKoboldToken.png"
+			},
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -220,6 +224,10 @@
 					]
 				}
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/CaskHaulerKoboldToken.png"
+			},
 			"attachedItems": [
 				"dagger|phb"
 			],
@@ -315,6 +323,10 @@
 					]
 				}
 			],
+			"token": {
+				"name": "Giant Weasel",
+				"source": "MM"
+			},
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -465,6 +477,10 @@
 					]
 				}
 			],
+			"token": {
+				"name": "Kobold Scale Sorcerer",
+				"source": "MPMM"
+			},
 			"attachedItems": [
 				"dagger|phb"
 			],
@@ -593,6 +609,10 @@
 					]
 				}
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/MoltenOozeToken.png"
+			},
 			"traitTags": [
 				"Amorphous",
 				"Spider Climb"
