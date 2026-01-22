@@ -2630,6 +2630,10 @@
 			"senseTags": [
 				"D"
 			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/Stalfos_Knight_Token.png"
+			},
 			"actionTags": [
 				"Multiattack",
 				"Parry"
