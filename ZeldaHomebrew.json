@@ -2237,6 +2237,64 @@
         }
       ],
       "damageTags": ["A", "B"]
+    },
+    {
+      "name": "Cloaked Stalfos",
+      "size": ["M"],
+      "type": "undead",
+      "source": "SleepycobblerTLoZSourceBook",
+      "alignment": ["N", "E"],
+      "ac": [14],
+      "hp": {
+        "formula": "12d8",
+        "average": 54
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 10,
+      "int": 8,
+      "wis": 8,
+      "cha": 6,
+      "passive": 9,
+      "cr": "1",
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Stal"],
+      "vulnerable": ["radiant"],
+      "immune": ["necrotic"],
+      "action": [
+        {
+          "name": "Enfeebling Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, plus 7 ({@damage 2d6}) necrotic damage. The target must also succeed on a {@dc 13} Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn."
+          ]
+        }
+      ],
+      "miscTags": ["RW", "RNG"],
+      "actionTags": ["Multiattack"],
+      "trait": [
+        {
+          "name": "Sunlight Weakness",
+          "entries": [
+            "While in sunlight, the cloaked stalfos has disadvantage on attack rolls, ability checks, and saving throws."
+          ]
+        },
+        {
+          "name": "Inanimate Disguise",
+          "entries": [
+            "The cloaked stalfos may choose to be inanimate and appear as a simple pile of bones and robes."
+          ]
+        }
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/Shrouded_Stalfos_Token.png"
+      },
+      "damageTags": ["N", "P"],
+      "savingThrowForced": ["constitution"]
     }
   ]
 }
