@@ -2531,6 +2531,116 @@
 			"savingThrowForced": [
 				"strength"
 			]
+		},
+		{
+			"name": "Stalfos Knight",
+			"source": "SleepycobblerTLoZSourceBook",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armor scraps and {@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 17,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"skill": {
+				"acrobatics": "+5",
+				"athletics": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"necrotic"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"languages": [
+				"Stal"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Inanimate Disguise",
+					"entries": [
+						"The Stalfos Knight may choose to be inanimate and appear as a simple pile of bones and armor."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in sunlight, the stalfos knight has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Stalfos Knight makes two longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"When another creature damages the Stalfos Knight with a melee attack, it can use it's reaction and reduce the damage by {@dice 1d8 + 3}."
+					]
+				},
+				{
+					"name": "Riposte",
+					"entries": [
+						"When a creature misses the Stalfos Knight with a melee attack, it can use it's reaction to make a melee weapon attack against the creature."
+					]
+				}
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			]
 		}
 	]
 }
