@@ -2295,6 +2295,135 @@
       },
       "damageTags": ["N", "P"],
       "savingThrowForced": ["constitution"]
-    }
+    },
+    {
+	"name": "Queen Gohma",
+	"size": [
+		"L"
+	],
+	"type": "monstrosity",
+	"source": "SleepycobblerTLoZSourceBook",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		17
+	],
+	"hp": {
+		"formula": "11d10",
+		"average": 60
+	},
+	"speed": {
+		"walk": 40,
+		"climb": 40
+	},
+	"str": 17,
+	"dex": 13,
+	"con": 11,
+	"int": 4,
+	"wis": 14,
+	"cha": 10,
+	"passive": 12,
+	"cr": "5",
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"senseTags": [
+		"SD"
+	],
+	"save": {
+		"con": "+3",
+		"int": "+0"
+	},
+	"skill": {
+		"stealth": "+4"
+	},
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from attacks that don't target the eye",
+			"cond": true
+		}
+	],
+	"vulnerable": [
+		{
+			"vulnerable": [
+				"piercing"
+			],
+			"note": "from attacks that target the eye",
+			"cond": true
+		}
+	],
+	"trait": [
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The queen gohma has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Spider Climb",
+			"entries": [
+				"The queen gohma can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			]
+		},
+		{
+			"name": "Weak Point",
+			"entries": [
+				"An attack which specifically targets the gohma's eye bypasses its damage immunity and resistances. If the attack inflicts piercing damage, it not only bypasses immunity and resistance, but inflicts double damage. Any attack roll made as a called shot, such as against this weak point, is normally made with disadvantage. "
+			]
+		}
+	],
+	"traitTags": [
+		"Magic Resistance",
+		"Spider Climb"
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The queen gohma makes three attacks. "
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Sting",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage, plus 2 ({@damage 1d4}) poison damage."
+			]
+		},
+		{
+			"name": "Birth {@recharge 5}",
+			"entries": [
+				"The gohma produces 3 ({@dice 1d4 + 1}) gohma larvae, which can either appear in the gohma's space or be dropped from the its vantage point on a wall or ceiling. Each larva acts on its own initiative, which is determined when this action is used. "
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"tokenHref": {
+		"type": "external",
+		"url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/Queen_Gohma_Token.png"
+	},
+	"damageTags": [
+		"I",
+		"P"
+	]
+}
   ]
 }
+
