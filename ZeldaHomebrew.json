@@ -2471,6 +2471,128 @@
         "url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/Gohma_Larva_Token.png"
       },
       "damageTags": ["P"]
+    },
+    {
+      "name": "Lynel",
+      "size": ["L"],
+      "type": "monstrosity",
+      "source": "SleepycobblerTLoZSourceBook",
+      "alignment": ["L", "E"],
+      "ac": [
+        {
+          "ac": 14,
+          "from": ["{@item shield|xphb}; 12 if using glaive or maul"]
+        }
+      ],
+      "hp": {
+        "formula": "20d10 + 100",
+        "average": 210
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 19,
+      "dex": 14,
+      "con": 20,
+      "int": 12,
+      "wis": 17,
+      "cha": 16,
+      "passive": 10,
+      "cr": "8",
+      "senses": ["darkvision 120 ft."],
+      "senseTags": ["SD"],
+      "languages": ["Blin", "Lynel"],
+      "skill": {
+        "perception": "+6",
+        "intimidation": "+6"
+      },
+      "resist": ["cold", "fire", "lightning"],
+      "trait": [
+        {
+          "name": "Deadly Marksman",
+          "entries": [
+            "The lynel adds both its Strength and Dexterity to its ranged weapon attack rolls (included in its statistics), and it ignores half- and three-quarter cover."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The lynel has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Trampling Charge",
+          "entries": [
+            "If the lynel moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the lynel can make another attack with its hooves against it as a bonus action."
+          ]
+        }
+      ],
+      "traitTags": ["Magic Resistance"],
+      "conditionInflict": ["prone"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The lynel makes either three melee attacks---one with its hooves and two with its longsword, glaive, or maul---or two ranged attacks with its longbow."
+          ]
+        },
+        {
+          "name": "Hooves",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Glaive (Variant)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Maul (Variant)",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Longbow",
+          "entries": [
+            "{@atk rw} {@hit 9} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, plus 10 ({@damage 3d6}) lightning damage."
+          ]
+        },
+        {
+          "name": "Seismic Slam {@recharge}",
+          "entries": [
+            "The lynel slams its weapon into the ground. Each other creature within 30 feet of it must succeed a {@dc 15} Constitution saving throw or take 36 ({@damage 8d8}) thunder damage and be knocked {@condition prone}. On a success, a creature takes half as much damage and isn't knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Fire Burst {@recharge}",
+          "entries": [
+            "The lynel breathes fire at up to three creatures within 60 feet of it. Each creature must make a {@dc 15} Dexterity saving throw, taking 17 ({@damage 5d6}) fire damage on a failed save or half as much on a successful one."
+          ]
+        }
+      ],
+      "actionTags": ["Breath Weapon", "Multiattack"],
+      "miscTags": ["MW", "MLW", "RCH", "RW", "RNG"],
+      "attachedItems": [
+        "glaive|xphb",
+        "longbow|xphb",
+        "longsword|xphb",
+        "maul|xphb"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/M-Schuhmacher/DnDHomebrew/refs/heads/main/Assets/Lynel_Token.png"
+      },
+      "damageTags": ["B", "F", "L", "P", "S", "T"],
+      "savingThrowForced": ["constitution", "dexterity", "strength"]
     }
   ]
 }
